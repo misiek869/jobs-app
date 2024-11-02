@@ -1,7 +1,7 @@
 import React from 'react'
 
 const DeleteJob = () => {
-	return <div></div>
+	return <div>DeleteJob</div>
 }
 
 export default DeleteJob
