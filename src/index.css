@@ -16,6 +16,11 @@
 	--fixed-width: 600px;
 	--fluid-width: 90vw;
 	--nav-height: 6rem;
+	--btn-bg: #c2410c;
+	--btn-bg-hover: #9a3412;
+	--border-radius: 0.125rem;
+	--letter-spacing: 1px;
+	--transition: 0.3s ease-in-out all;
 }
 
 html {
@@ -92,4 +97,10 @@ ul {
 
 .landing-page {
 	min-height: calc(100vh - 6rem);
+}
+
+.container {
+	width: 90vw;
+	max-width: 1120px;
+	margin: 0 auto;
 }
