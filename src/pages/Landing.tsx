@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import logo from '../assets/images/jm_logo.png'
+
 import mainImg from '../assets/images/main-photo.jpg'
+import Logo from '../components/Logo'
 
 const btnStyle =
 	'	cursor-pointer text-white bg-orange-700 border-none rounded-sm tracking-wider py-3 px-4 shadow-sm duration-300 capitalize inline-block hover:bg-orange-800 hover:shadow-lg'
@@ -9,7 +10,7 @@ const Landing = () => {
 	return (
 		<section className=''>
 			<nav className=' w-[90vw] max-w-6xl my-0 mx-auto h-24 flex items-center'>
-				<img src={logo} alt='logo' />
+				<Logo />
 			</nav>
 			<div className=' landing-page w-[90vw] max-w-6xl my-0 mx-auto grid items-center mt-[-3rem] grid-cols-[1fr_400px] gap-x-12'>
 				<div className=''>
