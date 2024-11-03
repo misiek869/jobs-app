@@ -89,3 +89,7 @@ ul {
 	display: block;
 	object-fit: cover;
 }
+
+.landing-page {
+	min-height: calc(100vh - 6rem);
+}

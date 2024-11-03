@@ -4,16 +4,16 @@ import mainImg from '../assets/images/main-photo.jpg'
 
 const Landing = () => {
 	return (
-		<section className=''>
-			<nav>
+		<section>
+			<nav className='w-[90vw] max-w-6xl bg-red-200 mx-0 my-auto h-24 flex items-center'>
 				<img src={logo} alt='logo' />
 			</nav>
-			<div className=''>
+			<div className='landing-page grid items-center mt-[-3rem]'>
 				<div className=''>
-					<h1>
-						Manage Your <span className=''>Jobs</span>
+					<h1 className='font-bold mb-6 text-gray-900'>
+						Manage Your <span className='text-orange-700'>Jobs</span>
 					</h1>
-					<p>
+					<p className='leading-8 text-gray-800 mb-6 max-w-[35em]'>
 						Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 						Exercitationem ab nulla maxime reiciendis, magnam delectus officiis
 						temporibus rem ipsum nemo? Asperiores unde obcaecati animi mollitia
