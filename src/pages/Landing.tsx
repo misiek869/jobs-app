@@ -8,7 +8,7 @@ const btnStyle =
 
 const Landing = () => {
 	return (
-		<section className=''>
+		<section>
 			<nav className=' w-[90vw] max-w-6xl my-0 mx-auto h-24 flex items-center'>
 				<Logo />
 			</nav>
