@@ -12,6 +12,10 @@
 
 :root {
 	--letter-spacing: 1px;
+	--max-width: 1120px;
+	--fixed-width: 600px;
+	--fluid-width: 90vw;
+	--nav-height: 6rem;
 }
 
 html {
