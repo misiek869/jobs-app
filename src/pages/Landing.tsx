@@ -9,7 +9,7 @@ const btnStyle =
 const Landing = () => {
 	return (
 		<section>
-			<nav className=' w-[90vw] max-w-6xl my-0 mx-auto h-24 flex items-center'>
+			<nav className=' w-[90vw] max-w-6xl my-0 mx-auto  flex items-center'>
 				<Logo />
 			</nav>
 			<div className=' landing-page w-[90vw] max-w-6xl my-0 mx-auto grid items-center mt-[-3rem] grid-cols-[1fr_400px] gap-x-12'>
