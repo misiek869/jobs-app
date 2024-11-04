@@ -7,7 +7,7 @@ type FormRowProps = {
 
 const FormRow = ({ type, name, labelText, defaultValue }: FormRowProps) => {
 	return (
-		<div className=''>
+		<div className='mb-4'>
 			<label
 				htmlFor={name}
 				className='block text-lg mb-3 capitalize tracking-wider leading-6'>
