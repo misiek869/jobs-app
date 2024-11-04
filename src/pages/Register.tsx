@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../components/Logo'
+import { Logo, FormRow } from '../components'
 import { Link } from 'react-router-dom'
 
 const Register = () => {
@@ -8,21 +8,7 @@ const Register = () => {
 			<form className='max-w-[400px] bg-neutral-100 rounded-sm shadow-md py-8 px-10'>
 				<Logo />
 				<h4 className='text-center mb-6'>Register</h4>
-				<div className=''>
-					<label
-						htmlFor='name'
-						className='block text-lg mb-3 capitalize tracking-wider leading-6'>
-						Name
-					</label>
-					<input
-						className='w-full py-2 px-3 rounded-sm border '
-						type='text'
-						required
-						id='name'
-						name='name'
-						defaultValue={'michal'}
-					/>
-				</div>
+				<FormRow type={'text'} name={'name'} defaultValue={'michal'} />
 				<button className='' type='submit'>
 					submit
 				</button>
