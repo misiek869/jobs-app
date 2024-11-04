@@ -4,11 +4,29 @@ import { Link } from 'react-router-dom'
 
 const Register = () => {
 	return (
-		<section className='min-h-screen grid items-center'>
-			<form className='max-w-[400px] bg-neutral-100 rounded-sm shadow-md py-8 px-10'>
-				<Logo />
+		<section className='min-h-screen grid place-items-center'>
+			<form className='w-[90vw] max-w-[400px] bg-neutral-100 rounded-sm shadow-md py-8 px-10'>
+				<div className='flex justify-center mb-6'>
+					<Logo />
+				</div>
 				<h4 className='text-center mb-6'>Register</h4>
 				<FormRow type={'text'} name={'name'} defaultValue={'michal'} />
+
+				<FormRow
+					type={'text'}
+					name={'lastName'}
+					defaultValue={'kowalski'}
+					labelText={'last name'}
+				/>
+
+				<FormRow
+					type={'email'}
+					defaultValue={'michal@michal.pl'}
+					name={'email'}
+				/>
+
+				<FormRow type={'password'} defaultValue={'123'} name={'password'} />
+
 				<button className='' type='submit'>
 					submit
 				</button>

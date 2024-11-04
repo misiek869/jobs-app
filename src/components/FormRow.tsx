@@ -1,8 +1,8 @@
 type FormRowProps = {
 	type: string
 	name: string
-	labelText?: string
 	defaultValue: string
+	labelText?: string
 }
 
 const FormRow = ({ type, name, labelText, defaultValue }: FormRowProps) => {
