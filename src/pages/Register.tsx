@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Register = () => {
 	return (
-		<section className='min-h-screen grid place-items-center'>
-			<form className='w-[90vw] max-w-[400px] bg-neutral-100 rounded-sm shadow-md py-8 px-10'>
+		<section className='min-h-screen grid place-items-center '>
+			<form className='w-[90vw] max-w-[400px]  rounded-sm shadow-md py-8 px-10 border'>
 				<div className='flex justify-center mb-6'>
 					<Logo />
 				</div>
