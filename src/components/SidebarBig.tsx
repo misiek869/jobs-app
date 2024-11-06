@@ -1,5 +1,5 @@
 const SidebarBig = () => {
-	return <div></div>
+	return <div>Big</div>
 }
 
 export default SidebarBig

@@ -1,5 +1,5 @@
 const SidebarSmall = () => {
-	return <div></div>
+	return <div>small</div>
 }
 
 export default SidebarSmall
