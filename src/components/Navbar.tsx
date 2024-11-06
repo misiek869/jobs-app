@@ -14,8 +14,10 @@ const Navbar = () => {
 					onClick={toggleSidebar}>
 					<AiOutlineMenu />
 				</button>
-				<div className=''>
-					<Logo />
+				<div>
+					<div className='flex items-center lg:hidden'>
+						<Logo />
+					</div>
 					<h4 className='hidden lg:block'>dashboard</h4>
 				</div>
 				<div className='flex items-center'>toggle/logout</div>
