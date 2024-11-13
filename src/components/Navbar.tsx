@@ -2,6 +2,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import Logo from './Logo'
 import { useDashboardContext } from '../pages/DashboardLayout'
 import LogoutContainer from './LogoutContainer'
+import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
 	const { toggleSidebar } = useDashboardContext()
@@ -22,6 +23,7 @@ const Navbar = () => {
 					<h4 className='hidden lg:block'>dashboard</h4>
 				</div>
 				<div className='flex items-center'>
+					<ThemeToggle />
 					<LogoutContainer />
 				</div>
 			</div>
