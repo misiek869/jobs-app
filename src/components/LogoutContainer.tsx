@@ -2,8 +2,8 @@ import { FaUserCircle, FaCaretDown } from 'react-icons/fa'
 import { useState } from 'react'
 import { useDashboardContext } from '../pages/DashboardLayout'
 
-const LogoutContaiber = () => {
+const LogoutContainer = () => {
 	return <div></div>
 }
 
-export default LogoutContaiber
+export default LogoutContainer
