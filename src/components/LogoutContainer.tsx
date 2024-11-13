@@ -22,7 +22,7 @@ const LogoutContainer = () => {
 			</button>
 			<div
 				className={`absolute top-[45px] left-0 w-full text-center  bg-orange-700 ${
-					showLogout ? 'duration-200' : 'hidden'
+					showLogout ? '' : 'hidden'
 				}`}>
 				<button
 					type='button'
