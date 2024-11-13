@@ -15,7 +15,7 @@ const SidebarSmall = () => {
 			<div
 				className={
 					showSidebar
-						? `${sidebarContainerStyles} z-50 opacity-100 visible`
+						? `${sidebarContainerStyles} z-50 opacity-90 visible`
 						: `${sidebarContainerStyles}`
 				}>
 				<div className=' w-[90vw] h-[95vh] rounded-sm py-16 px-8 relative flex items-center flex-col'>
@@ -28,7 +28,7 @@ const SidebarSmall = () => {
 					<header>
 						<Logo />
 					</header>
-					<div className='pt-8 flex flex-col'>
+					<div className='pt-20 flex flex-col'>
 						{links.map(link => {
 							const { text, path, icon } = link
 							return (
