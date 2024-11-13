@@ -9,7 +9,7 @@ const SidebarBig = () => {
 		'bg-white min-h-screen h-full w-[250px] ml-[-250px] duration-300'
 
 	return (
-		<aside className='text-xl border-r'>
+		<aside className='text-xl border-r hidden lg:block'>
 			<div
 				className={
 					showSidebar
