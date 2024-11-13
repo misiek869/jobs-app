@@ -2,6 +2,10 @@ import React, { createContext, useContext, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Navbar, SidebarBig, SidebarSmall } from '../components'
 
+type DashboardLayoutProps = {
+	isDarkThemeOn: boolean
+}
+
 type User = {
 	name: string
 }
@@ -28,14 +32,19 @@ const defaultContextValue: DashboardContextType = {
 
 const DashboardContext = createContext(defaultContextValue)
 
-const DashboardLayout = () => {
+const DashboardLayout = ({ isDarkThemeOn }: DashboardLayoutProps) => {
 	const user: User = { name: 'michael' }
 
 	const [showSidebar, setShowSidebar] = useState<boolean>(false)
-	const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false)
+	const [isDarkTheme, setIsDarkTheme] = useState<boolean>(isDarkThemeOn)
 
 	const toggleDarkTheme = () => {
-		console.log('toggle dark theme')
+		const newDarkTheme = !isDarkTheme
+		setIsDarkTheme(newDarkTheme)
+
+		document.body.classList.toggle('dark-theme', newDarkTheme)
+
+		localStorage.setItem('theme', newDarkTheme.toString())
 	}
 
 	const toggleSidebar = () => {
