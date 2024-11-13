@@ -6,7 +6,7 @@ const Navbar = () => {
 	const { toggleSidebar } = useDashboardContext()
 
 	return (
-		<nav className='h-24 flex items-center justify-center shadow-md lg:sticky lg:top-0 '>
+		<nav className='h-24 flex items-center justify-center border-b-2 lg:sticky lg:top-0 '>
 			<div className='flex w-[90vw] items-center justify-between lg:w-[90%]'>
 				<button
 					type='button'
