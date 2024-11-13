@@ -108,3 +108,16 @@ ul {
 .active {
 	color: #c2410c;
 }
+
+.dropdown {
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+	visibility: hidden; /* Domyślnie ukryty */
+}
+
+.dropdown.show {
+	opacity: 1;
+	transform: translateY(0);
+	visibility: visible; /* Umożliwia widoczność */
+}
