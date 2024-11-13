@@ -7,8 +7,8 @@ const DashboardContext = createContext()
 const DashboardLayout = () => {
 	const user = { name: 'michael' }
 
-	const [showSidebar, setShowSidebar] = useState(false)
-	const [isDarkTheme, setIsDarkTheme] = useState(false)
+	const [showSidebar, setShowSidebar] = useState<boolean>(false)
+	const [isDarkTheme, setIsDarkTheme] = useState<boolean>(false)
 
 	const toggleDarkTheme = () => {
 		console.log('toggle dark theme')

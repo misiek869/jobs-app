@@ -2,7 +2,7 @@ import links from '../utils/links'
 import { useDashboardContext } from '../pages/DashboardLayout'
 import { NavLink } from 'react-router-dom'
 
-const NavLinks = () => {
+const NavLinks = ({ isBigSidebar }) => {
 	const { toggleSidebar } = useDashboardContext()
 
 	return (
@@ -14,7 +14,7 @@ const NavLinks = () => {
 						to={path}
 						key={text}
 						className='flex items-center py-4 capitalize text-xl tracking-wider font-semibold  text-slate-900 hover:text-orange-800 duration-200'
-						onClick={toggleSidebar}
+						onClick={isBigSidebar ? null : toggleSidebar}
 						end>
 						<span className='text-4xl mr-4 grid place-items-center'>
 							{icon}
