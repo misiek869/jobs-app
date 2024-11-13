@@ -1,6 +1,10 @@
 import links from '../utils/links'
+import { useDashboardContext } from '../pages/DashboardLayout'
+import { NavLink } from 'react-router-dom'
 
 const NavLinks = () => {
+	const { toggleSidebar } = useDashboardContext()
+
 	return (
 		<div className='pt-20 flex flex-col'>
 			{links.map(link => {
