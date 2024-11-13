@@ -10,9 +10,9 @@ const ThemeToggle = () => {
 			onClick={toggleDarkTheme}
 			className='bg-transparent w-14 h-8 grid place-items-center cursor-pointer '>
 			{isDarkTheme ? (
-				<BsFillSunFill className='text-2xl text-gray-800' />
+				<BsFillSunFill className='text-cxl text-gray-800' />
 			) : (
-				<BsFillMoonFill className='text-2xl text-gray-800' />
+				<BsFillMoonFill className='text-cxl text-gray-800' />
 			)}
 		</button>
 	)
