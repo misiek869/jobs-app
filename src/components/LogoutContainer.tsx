@@ -6,7 +6,7 @@ const btnStyle =
 	'cursor-pointer text-white bg-orange-700 border-none rounded-sm tracking-wider py-3 px-4 shadow-sm duration-300 capitalize inline-block hover:bg-orange-800 hover:shadow-lg'
 
 const LogoutContainer = () => {
-	const [showLogout, setShowLogout] = useState<boolean>(false)
+	const [showLogout, setShowLogout] = useState<boolean>(true)
 
 	const { user, logoutUser } = useDashboardContext()
 
@@ -14,19 +14,19 @@ const LogoutContainer = () => {
 		<div className='relative'>
 			<button
 				type='button'
-				className={`${btnStyle} flex items-center justify-center gap-x-2`}
+				className={`${btnStyle} font-medium flex items-center justify-center gap-x-2`}
 				onClick={() => setShowLogout(!showLogout)}>
-				<FaUserCircle />
+				<FaUserCircle className='text-xl' />
 				{user?.name}
 				<FaCaretDown />
 			</button>
 			<div
-				className={`absolute top-[45px] left-0 w-full text-center  bg-orange-700 ${
+				className={`absolute top-[50px] left-0 w-full text-center rounded-sm  bg-orange-700 ${
 					showLogout ? '' : 'hidden'
 				}`}>
 				<button
 					type='button'
-					className='p-2 bg-transparent text-white w-full h-full cursor-pointer capitalize'
+					className='p-2 bg-transparent font-medium tracking-wider text-white w-full h-full cursor-pointer capitalize'
 					onClick={logoutUser}>
 					logout
 				</button>
