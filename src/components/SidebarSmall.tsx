@@ -8,7 +8,7 @@ const SidebarSmall = () => {
 	const { showSidebar, toggleSidebar } = useDashboardContext()
 
 	const sidebarContainerStyles =
-		'fixed inset-0 bg-red-100 flex justify-center items-center -z-10 opacity-0 duration-300 visible'
+		'fixed inset-0 bg-white flex justify-center items-center -z-10 opacity-0 duration-300 visible'
 
 	return (
 		<aside className='lg:hidden'>
@@ -18,7 +18,7 @@ const SidebarSmall = () => {
 						? `${sidebarContainerStyles} z-50 opacity-100 visible`
 						: `${sidebarContainerStyles}`
 				}>
-				<div className='bg-red-300 w-[90vw] h-[95vh] rounded-sm py-16 px-8 relative flex items-center flex-col'>
+				<div className=' w-[90vw] h-[95vh] rounded-sm py-16 px-8 relative flex items-center flex-col'>
 					<button
 						type='button'
 						className='absolute top-3 right-3 bg-transparent text-2xl cursor-pointer text-red-800'
@@ -28,17 +28,19 @@ const SidebarSmall = () => {
 					<header>
 						<Logo />
 					</header>
-					<div className=''>
+					<div className='pt-8 flex flex-col'>
 						{links.map(link => {
 							const { text, path, icon } = link
 							return (
 								<NavLink
 									to={path}
 									key={text}
-									className=''
+									className='flex items-center py-4 capitalize text-xl tracking-wider font-semibold  text-slate-900 hover:text-slate-800 duration-200'
 									onClick={toggleSidebar}
 									end>
-									<span className=''>{icon}</span>
+									<span className='text-4xl mr-4 grid place-items-center'>
+										{icon}
+									</span>
 									{text}
 								</NavLink>
 							)
