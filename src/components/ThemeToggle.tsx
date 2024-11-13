@@ -4,7 +4,18 @@ import { useDashboardContext } from '../pages/DashboardLayout'
 const ThemeToggle = () => {
 	const { isDarkTheme, toggleDarkTheme } = useDashboardContext()
 
-	return <div></div>
+	return (
+		<button
+			type='button'
+			onClick={toggleDarkTheme}
+			className='bg-transparent w-14 h-8 grid place-items-center cursor-pointer '>
+			{isDarkTheme ? (
+				<BsFillSunFill className='text-2xl text-gray-800' />
+			) : (
+				<BsFillMoonFill className='text-2xl text-gray-800' />
+			)}
+		</button>
+	)
 }
 
 export default ThemeToggle
