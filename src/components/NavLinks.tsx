@@ -13,7 +13,11 @@ const NavLinks = ({ isBigSidebar }) => {
 					<NavLink
 						to={path}
 						key={text}
-						className='flex items-center py-4 capitalize text-xl tracking-wider font-semibold  text-slate-900 hover:text-orange-800 duration-200'
+						className={
+							isBigSidebar
+								? 'flex items-center mx-12 py-4 capitalize text-xl tracking-wider font-semibold  text-slate-900 hover:text-orange-800 duration-200'
+								: 'flex items-center justify-center py-4 capitalize text-xl tracking-wider font-semibold  text-slate-900 hover:text-orange-800 duration-200'
+						}
 						onClick={isBigSidebar ? null : toggleSidebar}
 						end>
 						<span className='text-4xl mr-4 grid place-items-center'>
