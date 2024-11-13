@@ -6,7 +6,7 @@ const btnStyle =
 	'cursor-pointer text-white bg-orange-700 border-none rounded-sm tracking-wider py-3 px-4 shadow-sm duration-300 capitalize inline-block hover:bg-orange-800 hover:shadow-lg'
 
 const LogoutContainer = () => {
-	const [showLogout, setShowLogout] = useState<boolean>(true)
+	const [showLogout, setShowLogout] = useState<boolean>(false)
 
 	const { user, logoutUser } = useDashboardContext()
 
