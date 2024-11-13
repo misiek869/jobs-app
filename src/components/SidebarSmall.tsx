@@ -27,7 +27,7 @@ const SidebarSmall = () => {
 					<header>
 						<Logo />
 					</header>
-					<NavLinks toggleSidebar={toggleSidebar} />
+					<NavLinks isBigSidebar />
 				</div>
 			</div>
 		</aside>

@@ -2,7 +2,17 @@ import React, { createContext, useContext, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { Navbar, SidebarBig, SidebarSmall } from '../components'
 
-const DashboardContext = createContext()
+const defaultContextValue = {
+	user: null,
+	showSidebar: false,
+	isDarkTheme: false,
+	toggleDarkTheme: () => {},
+	toggleSidebar: () => {},
+	logoutUser: () => {},
+	setIsDarkTheme: () => {},
+}
+
+const DashboardContext = createContext(defaultContextValue)
 
 const DashboardLayout = () => {
 	const user = { name: 'michael' }
@@ -31,6 +41,7 @@ const DashboardLayout = () => {
 				toggleDarkTheme,
 				toggleSidebar,
 				logoutUser,
+				setIsDarkTheme,
 			}}>
 			<section>
 				<main className='grid grid-cols-[1fr] lg:grid-cols-[auto,1fr] '>
